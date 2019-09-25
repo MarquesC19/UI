@@ -1,0 +1,81 @@
+*{
+    box-sizing:border-box;
+    }
+    body{
+        background-image: url("Asset-2blood.png");
+        background-color:rgb(245, 93, 76);
+        margin:0;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:17px;
+        color:white;
+        line-height:1.6;
+        flex-direction:column;
+    }
+    
+    .navbar {
+        margin:0 auto;
+        padding:0 auto;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        text-decoration:none;
+        color:white;
+        font-size:20px;
+        border:50px solid white;
+    }
+    .navbar:hover{
+    background-color:white;
+    
+    }
+    #showcase{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    text-align:center;
+    }
+    
+    #showcase h1{
+        font-size:50px;
+    
+    }
+    
+    #showcase p{
+        font-size:20px;
+        margin-top:30px;
+        padding-top:50px;
+    }
+    
+    #showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    background-color:white;
+    color:salmon;
+    border:1px dashed white;
+    padding:10px 25px;
+    border-radius:15px;
+    margin:20px;
+    }
+    
+    #showcase .button:hover{
+    color:white;
+    }
+    
+    .footer-content{
+        margin:50px;
+        padding:25px;
+        display:flex;
+        font-size:20px;
+        background-color:salmon;
+        justify-content:center;
+        align-items:center;
+    border:50px solid white;
+    }
+    .footer-content:hover{
+    background-color:white;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        body {
+          background-color:red;

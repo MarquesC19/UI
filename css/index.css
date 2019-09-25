@@ -1,17 +1,25 @@
 *{
 box-sizing:border-box;
 }
+
 body{
-    background-image: url("Asset-2blood.png");
-    background-color:rgb(245, 93, 76);
+    background-color:lightgray;
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
     font-size:17px;
-    color:white;
+    color:rgb(245, 93, 76);
     line-height:1.6;
     flex-direction:column;
 }
-
+.img{
+    width:100%;
+    height:100px;
+position:absolute;
+background-image:center;
+border-radius:100%;
+padding:30%:;
+margin:45px;
+}
 .navbar {
     margin:0 auto;
     padding:0 auto;
@@ -24,7 +32,7 @@ body{
     border:50px solid white;
 }
 .navbar:hover{
-background-color:white;
+background-color:rgb(245, 93, 76);
 
 }
 #showcase{
@@ -43,15 +51,15 @@ text-align:center;
 
 #showcase p{
     font-size:20px;
-    margin-top:30px;
-    padding-top:50px;
+    margin-top:50px;
+    padding-top:60px;
 }
 
 #showcase .button{
 font-size:18px;
 text-decoration:none;
 background-color:white;
-color:salmon;
+color:rgb(245, 93, 76);
 border:1px dashed white;
 padding:10px 25px;
 border-radius:15px;
@@ -63,19 +71,45 @@ color:white;
 }
 
 .footer-content{
-    margin:50px;
-    padding:25px;
-    display:flex;
-    font-size:20px;
-    background-color:salmon;
-    justify-content:center;
-    align-items:center;
-border:50px solid white;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:white;
+  color:rgb(245, 93, 76);
+  text-align: center;
 }
 .footer-content:hover{
-background-color:white;
+background-color:salmon;
 }
-
-@media only screen and (max-width: 768px) {
+/* mobile view */
+@media only screen and (max-width:480px) {
     body {
-      background-color:red;
+      background-color:rgb(245, 93, 76);
+      flex-direction: column;
+    }
+
+    .navbar{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction:column;
+    }
+    .navbar:hover{
+    background-color:white;
+    }
+}
+#showcase{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding:0 20px;
+text-align:center;
+}
+#showcase p{
+    font-size:20px;
+    margin-top:30px;
+    padding-top:50px;
+    flex-direction:column;
+}
